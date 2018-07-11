@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "Validate Components through propTypes",
   "main": "lib/index.js",
-  "browser": "index.js",
+  "browser": "lib/index.js",
+  "module": "index.js",
   "scripts": {
     "prepublish": "npm run transpile",
     "transpile": "mkdir -p lib && babel -o ./lib/index.js ./index.js",
