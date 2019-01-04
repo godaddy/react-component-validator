@@ -1,6 +1,6 @@
 # React Component validator
 
-Validate the instances of components that get passed as properties. This validator assumes your working with React@0.14 or greater.
+Validate the instances of components that get passed as properties. 
 
 ### Install
 
