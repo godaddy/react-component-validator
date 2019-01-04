@@ -14,13 +14,6 @@
     "type": "git",
     "url": "git@github.com:godaddy/react-component-validator.git"
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify"
-      ]
-    ]
-  },
   "babel": {
     "presets": [
       "@babel/preset-env"
@@ -34,7 +27,6 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "babelify": "^10.0.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"
   },
