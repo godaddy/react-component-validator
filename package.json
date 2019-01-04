@@ -1,6 +1,6 @@
 {
   "name": "react-component-validator",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Validate Components through propTypes",
   "main": "lib/index.js",
   "browser": "lib/index.js",
