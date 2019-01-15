@@ -6,37 +6,29 @@
   "browser": "lib/index.js",
   "module": "index.js",
   "scripts": {
-    "prepublish": "npm run transpile",
-    "transpile": "mkdir -p lib && babel -o ./lib/index.js ./index.js",
-    "test": "mocha --spec reporter --compilers js:babel-register ./test.js"
+    "prepublishOnly": "npm run build",
+    "build": "babel index.js -d ./lib",
+    "test": "nyc mocha --spec reporter --require @babel/register ./test.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:godaddy/react-component-validator.git"
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify"
-      ]
-    ]
-  },
   "babel": {
     "presets": [
-      "babel-preset-es2015"
+      "@babel/preset-env"
     ]
   },
   "author": "GoDaddy.com LLC",
   "license": "MIT",
   "devDependencies": {
-    "assume": "~1.4.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.5.0",
-    "babel-register": "^6.26.0",
-    "babelify": "^7.3.0",
-    "istanbul": "~0.4.2",
+    "assume": "^2.1.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/register": "^7.0.0",
     "mocha": "^5.2.0",
-    "pre-commit": "~1.1.2"
+    "nyc": "^13.1.0"
   },
   "dependencies": {}
 }
