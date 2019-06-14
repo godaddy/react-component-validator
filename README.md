@@ -1,5 +1,7 @@
 # React Component validator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/godaddy/react-component-validator.svg)](https://greenkeeper.io/)
+
 Validate the instances of components that get passed as properties. 
 
 ### Install
