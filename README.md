@@ -1,5 +1,7 @@
 # React Component validator
 
+> ⚠️ **DEPRECATED**: This package is no longer maintained and has been deprecated. Please use an alternative solution or contact the maintainers for more information.****
+
 Validate the instances of components that get passed as properties. 
 
 ### Install
